@@ -1,0 +1,8 @@
+services:
+  backend_web:
+    container_name: hello_world_container
+    image: hello_world_container
+    restart: on-failure
+    build: ./ 
+    ports:
+      - "4444:4444"
