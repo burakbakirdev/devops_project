@@ -1,0 +1,8 @@
+services:
+  backend_web:
+    container_name: helloworldsonarqube
+    image: helloworldsonarqube
+    restart: on-failure
+    build: ./ 
+    ports:
+      - "1111:1111"
